@@ -75,9 +75,10 @@ body.subpage{
 .wrapper .header .nav .logo{
     position: absolute;
     top: 0;
-    left: 48%;
+    left: -32%;
     transform: translateX(-50%);
     transition: height 300ms;
+    width: 489px;
 }
 .wrapper .header .nav > ul{
     display: block;
@@ -145,7 +146,7 @@ body.subpage{
     /* filter: brightness(0.5); */
 }
 .wrapper .header .nav > ul li:nth-child(2){
-    margin-right: 10%;
+    /* margin-right: 10%; */
 }
 .wrapper .header .nav > ul li a{
     font-size: 19px;
@@ -154,6 +155,10 @@ body.subpage{
     line-height: 40px;
     text-decoration: none;
     transition: color 300ms;
+    background: #eb6434;
+    font-size: 31px;
+    border-radius: 13px;
+    padding: 7px;
 }
 .wrapper .header .nav > ul li a:hover,
 .wrapper .header .nav > ul li a.active{
