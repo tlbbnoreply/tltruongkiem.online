@@ -360,6 +360,7 @@ fieldset[disabled] .btn-dragonoath-reg.focus {
 }
 .custom-logo{
 	display: block;
+	width: 250px;
 }
 .custom-logo-link {
 	float: left;
