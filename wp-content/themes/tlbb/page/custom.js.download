@@ -1,0 +1,43 @@
+/**
+ * File custom.js.
+ */
+jQuery(function($){
+	// Scroll animate
+	AOS.init();	
+	
+	//Home Menu 
+	$('.navbar-toggle').click(function(){
+	$('html,body').toggleClass('navbar-open');	
+	$('.navbar-collapse').toggleClass('navbar-collapse-right');
+	$('.navbar-toggle').toggleClass('navbar-toggle-indexcity');
+	});
+	
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        $(this).parent().siblings().removeClass('open');
+        $(this).parent().toggleClass('open');
+    });	
+	
+    // The WordPress Default Widgets
+    // Now we'll add some classes for the wordpress default widgets - let's go
+
+    $( '.widget_archive select, .widget_categories select' ).addClass( 'form-control' );
+
+	// Back To Top Button
+	$('body').append('<div class="back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></div>');
+	$(window).scroll(function () {
+		if ($(this).scrollTop() != 0) {
+			$('body').addClass('back-to-top-icon');
+			$('.back-to-top').fadeIn();		
+		} else {
+			$('body').removeClass('back-to-top-icon');
+			$('.back-to-top').fadeOut();
+		}
+	}); 
+	
+    $('.back-to-top').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
