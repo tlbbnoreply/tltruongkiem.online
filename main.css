@@ -1,0 +1,321 @@
+html, body {
+  font-family: Arial, sans-serif;
+  background-color: #fff1cb;
+  margin: 0 auto;
+  width: 1920px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+}
+body{ cursor: url(image/mouse.png), auto;}
+.bg-main{
+  height: 3700px;
+  background-image: url(image/bg.jpg);
+  background-repeat: no-repeat;
+}
+.bg-tintuc{
+  background-image: url(image/bg-4.jpg);
+  background-repeat: no-repeat;
+  background-color: #333;
+  min-height: 1500px;
+}
+.scroll-right{
+    background-image: url(image/scroll.png);
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 185px;
+    height: 460px;
+    right: 50px;
+    top: 15vh;
+    z-index: 10;
+    transition: transform 0.4s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-right a{
+    transition: transform 0.2s ease, color 0.3s;
+}
+.scroll-right a:hover{
+    animation: shake 0.3s ease-in-out;
+}
+.scroll-left{
+    position: fixed;
+    width: 180px;
+    height: auto;
+    left: 50px;
+    top: 10vh;
+    z-index: 10;
+    transition: transform 0.4s ease-out;
+}
+.scroll-left a{
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.3s;
+}
+.scroll-left a:hover{
+    animation: shake 0.3s ease-in-out;
+}
+.page1 {
+    width: 1920px;
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    height: 68px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    font-size: 25px;
+}
+.header li{
+    list-style: none;
+}
+.header a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "uvnlaclongquanr";
+    transition: transform 0.2s ease, color 0.3s;
+    display: inline-block;
+}
+.header a:hover {
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.05); }
+  50%  { transform: scale(0.98); }
+  75%  { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+@keyframes pulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.3); }
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 169px;
+}
+.music-icon {
+    width: 88px;
+    height: 88px;
+    cursor: pointer;
+    z-index: 5;
+    animation: spinner 2s linear infinite;
+}
+.slogan-text{
+  width: 960px;
+  height: 334px;
+}
+.page1-box {
+    background-image: url(image/page1-box-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 927px;
+    height: 181px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    top: -62px;
+}
+.page1-box img{
+    padding-top: 5px;
+    transition: transform 0.2s ease, color 0.3s;
+}
+.page1-box img:hover{
+    animation: shake 0.3s ease-in-out;
+}
+.page2{
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+.box-tintuc{
+    width: 710px;
+    height: 380px;
+    position: absolute;
+    top: 283px;
+    right: 282px;
+}
+.pagination {
+    position: absolute;
+    top: 672px;
+    right: 594px;
+    display: flex;
+    gap: 10px;
+}
+.page3 {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  margin-left: -276px;
+}
+
+.showmp {
+  background-image: url(image/showmp-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1157px;
+  height: 548px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-prev,
+.btn-next {
+  background: none;
+  border: none;
+  font-size: 50px;
+  color: #333;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+  transform: scale(1.2);
+}
+.mp-name{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mp-content{
+    width: 98%;
+    height:468px;
+}
+.fade {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.fade.show {
+  opacity: 1;
+}
+.mp-content {
+  transition: opacity 0.5s ease;
+}
+.page4{
+    width: 100%;
+    height: 800px;
+}
+.page4-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+    position: relative;
+    z-index: 1;
+    top: 190px;
+    right: -433px;
+}
+
+.mySwiper-sub4 {
+  width: 932px;
+  height: 512px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.mySwiper-sub4 .swiper-wrapper {
+  align-items: center;
+}
+
+.mySwiper-sub4 .swiper-slide {
+  width: 844px !important;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mySwiper-sub4 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mySwiper-sub4 .swiper-slide-active {
+  opacity: 1;
+  filter: brightness(1);
+  transform: scale(1);
+  z-index: 3;
+}
+.mySwiper-sub4 .swiper-slide-prev,
+.mySwiper-sub4 .swiper-slide-next {
+  opacity: 0.7;
+  filter: brightness(0.7);
+  transform: scale(0.85);
+  z-index: 2;
+}
+
+.mySwiper-sub4 .swiper-slide {
+  transition: all 0.5s ease;
+}
+
+
+/* Xử lý nội dung không bị tràn */
+.content {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #eee;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Xử lý riêng cho block preformatted */
+.content .wp-block-preformatted {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+  max-width: 100%;
+  white-space: pre-wrap; /* Nếu bạn muốn xuống dòng theo chiều rộng */
+  font-family: monospace;
+  color: #ccc;
+  margin-bottom: 1em;
+}
+
+/* Xử lý riêng cho block preformatted */
+.wp-block-preformatted {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+  max-width: 100%;
+  white-space: pre-wrap; /* Nếu bạn muốn xuống dòng theo chiều rộng */
+  font-family: monospace;
+  color: #ccc;
+  margin-bottom: 1em;
+}

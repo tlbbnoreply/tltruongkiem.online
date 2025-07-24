@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức Thiên Long Trường Kiếm</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="tintuc.css">
+</head>
+<body class="bg-tintuc">
+    <div class="scroll-right scroll">
+        <a href="link đăng nhập" target="_blank">
+        <img src="image/NAPTHE.gif" alt="Nạp Thẻ" style="width: 175px;">
+        </a>
+        <a href="/tintuc.html?id=13">
+        <img src="image/download.png" alt="Tải game" style="width: 180px;">
+        </a> 
+        <a href="https://id.tltruongkiem.online" target="_blank">
+        <img src="image/dangnhap.png" alt="Đăng nhập" style="width: 180px;">
+        </a> 
+        <a href="https://id.tltruongkiem.online" target="_blank">
+        <img src="image/dangky.png" alt="Đăng ký" style="width: 180px; margin-bottom: 13px;">
+        </a>   
+    </div>
+    <div class="scroll-left scroll">
+        <a href="https://www.facebook.com/trungxungkiem" target="_blank">
+        <img src="image/fanpage.png" alt="Facebook">
+        </a>
+        <a href="https://chat.zalo.me/?phone=0379726746" target="_blank">
+        <img src="image/zalo.png" alt="Zalo">
+        </a>
+        <a href="tintuc.html">
+        <img src="image/event.png" alt="Tin Tức">
+        </a>                
+    </div>
+    <div class="logo"></div>
+    <div class="page1">
+        <div class="header">
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="#" onclick="returnToNewsList()">Tin Tức</a></li>
+            <li><a href="">Hướng Dẫn</a></li>
+            <li><a href="/tintuc.html?id=10">Drop</a></li>
+            <li><a href="https://www.facebook.com/groups/hoiquantrungxungkiem" target="_blank">Groups</a></li>         
+        </div>
+        <div class="slogan2">
+        </div>
+        <div class="page1-box">
+            <a href="download.html">
+                <img src="image/img-bnt-tai-1.png" alt="Tải Game">
+            </a>
+            <a href="link đăng ký" target="_blank">
+                <img src="image/img-bnt-tai-2.png" alt="Đăng Ký">
+            </a>
+            <a href="https://www.facebook.com/trungxungkiem" target="_blank">
+                <img src="image/img-bnt-tai-3.png" alt="Giftcode">
+            </a>
+        </div>
+    </div>
+    <div class="page-tintuc">
+        <div class="left-content">
+            <div class="left-content-title"><h3>Lời Giới Thiệu</h3></div>
+            <img src="image/content-left.png" alt="">
+        </div>
+        <div class="right-content">
+            <div class="page-tintuc-title"><h3>Tin Tức Thiên Long Trường Kiếm</h3></div>
+            <div class="page-tintuc-content"></div>
+            <div class="pagination-detail" style="margin-top: 10px; display: flex; gap: 10px; justify-content: center;padding: 10px 0;">
+                <button id="prevBtn">Pre</button>
+                <span id="pageNumber">1</span>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="scroll.js"></script>
+    <script src="fakenews.js"></script>
+    <script src="news-detail.js"></script>
+    <script>
+    function returnToNewsList() {
+        window.location.href = "tintuc.html";
+        return false;
+    }
+    </script>
+
+</body>
+</html>

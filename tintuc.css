@@ -1,0 +1,158 @@
+@keyframes shake {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.05); }
+  50%  { transform: scale(0.98); }
+  75%  { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+@keyframes pulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.3); }
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.slogan2{
+    width: 100%;
+    height: 377px;
+}
+.left-content{
+    width: 370px;
+    height: 500px;
+    background-color: #2324257a;
+}
+.left-content-title{
+    background-image: url(image/left-content-title.png);
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 67px;
+    text-align: center;
+    line-height: 67px;
+}
+.right-content{
+    width: 790px;
+    height: auto;
+    background-color: #2324257a;
+}
+.page-tintuc {
+    width: 1180px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: -411px;
+}
+.page-tintuc-title {
+    background-image: url(image/page-bar.png);
+    background-repeat: no-repeat;
+    width: 790px;
+    height: 67px;
+    text-align: center;
+    line-height: 67px;
+}
+.page-tintuc-content{
+    width: 100%;
+    min-height: 500px;
+}
+.page-tintuc-title h3{
+    font-size: 30px;
+    margin: 0;
+    color: #ffffff;
+}
+.left-content-title h3{
+    font-size: 30px;
+    margin: 0;
+    color: #ffffff;
+}
+.pagination-detail button {
+  padding: 5px 10px;
+  border: none;
+  background: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pagination-detail button:hover {
+  background: #aaa;
+}
+
+.pagination-detail button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.page-tintuc-content.is-detail{
+    text-align: center;
+}
+
+/* trang download */
+
+.page-download-title {
+    background-image: url(image/page-bar.png);
+    background-repeat: no-repeat;
+    width: 790px;
+    height: 67px;
+    text-align: center;
+    line-height: 67px;
+}
+.page-download-content{
+    width: 100%;
+    min-height: 500px;
+}
+.page-download-title h3{
+    font-size: 30px;
+    margin: 0;
+    color: #ffffff;
+}
+.linktaigame {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+.linktaigame img{
+    transition: transform 0.2s ease, color 0.3s;
+}
+.linktaigame img:hover{
+    animation: shake 0.3s ease-in-out;
+    filter: brightness(1.2);
+}
+.page-download-content_table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Xử lý nội dung không bị tràn */
+.content {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #eee;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Xử lý riêng cho block preformatted */
+.content .wp-block-preformatted {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+  max-width: 100%;
+  white-space: pre-wrap; /* Nếu bạn muốn xuống dòng theo chiều rộng */
+  font-family: monospace;
+  color: #ccc;
+  margin-bottom: 1em;
+}
